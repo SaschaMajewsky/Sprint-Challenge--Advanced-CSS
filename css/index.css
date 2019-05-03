@@ -174,7 +174,13 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: rgba(211, 111, 53, 0.9);
+  width: 100%;
+  max-width: 800px;
+  border-radius: 5px;
 }
 .container .nav .nav-text {
   font-family: "Russo One";
@@ -220,6 +226,9 @@ html {
     width: 428px !important;
     margin-left: 1rem;
   }
+}
+html .home .intro {
+  margin-top: 10rem;
 }
 html .home .intro h2 {
   padding: 15px;
