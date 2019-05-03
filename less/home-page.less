@@ -2,27 +2,38 @@
 
 html {
     font-size: 62.5%; 
+    min-width: 428px !important;
     @media @phone {
       overflow-x: hidden;
+      min-width: auto !important;
       }
     .home {
       @media @phone {
         max-width: 428px;
-        min-width: 428px !important;
+        min-width: auto !important;
         }
       section {
         @media @phone {
-          width: 428px !important;
-          margin-left: @phone-margin-left;
+          max-width: 100% !important;
+          min-width: auto !important;
           }
+      }
+      #fitted {
+        margin-right: 2rem;
       }
       .intro {
         margin-top: 8.2rem;
+        @media @smaller-phone {
+          margin-top: 29rem;
+          }
         h2 {
           padding: 15px;
           @media @phone {
             margin-left: @phone-margin-left;
-              }
+            }
+            @media @smaller-phone {
+            font-size: 10vw !important;
+            }
         }
 
         p {
@@ -36,6 +47,8 @@ html {
           width: 100% !important;
           @media @phone {
             max-width: 100% !important;
+            min-width: auto !important;
+            height: 100%;
             }
         }
 
@@ -49,9 +62,15 @@ html {
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          max-width: 100% !important;
+          min-width: auto !important;
           .blast{
             width: @image-width;
             margin-right: 3rem;
+            @media @phone {
+              max-width: 100% !important;
+              min-width: auto !important;
+              }
           }
           .sky, .launch {
             display: none !important;
@@ -68,14 +87,29 @@ html {
 
       .visit-planets {
         padding: 15px;
+        @media @phone {
+          max-width: 100% !important;
+          min-width: auto !important;
+          }
 
         h3 {
           margin-top: 11px;
+          @media @phone {
+            max-width: 100% !important;
+            min-width: auto !important;
+            }
+            @media @smaller-phone {
+            font-size: 10vw !important;
+            }
         }
 
         p {
           margin-top: 13px;
+          @media @phone {
+            min-width: auto !important;
+            }
         }
+
       }
 
       .walk {
@@ -89,6 +123,8 @@ html {
           align-items: flex-start;
           padding: 0rem;
           margin-top: 1rem;
+          max-width: 100% !important;
+          min-width: auto !important;
         }
 
         .walk-text {
@@ -101,10 +137,21 @@ html {
 
           h3 {
             margin-bottom: 10px;
+            @media @phone {
+              max-width: 100% !important;
+              min-width: auto !important;
+              }
+              @media @smaller-phone {
+                font-size: 10vw !important;
+               }
           }
 
           p {
             margin-bottom: 26px;
+            @media @phone {
+              max-width: 100% !important;
+              min-width: auto !important;
+              }
           }
 
           .btn {
@@ -121,8 +168,10 @@ html {
           margin-left: 4%;
           @media @phone {
             margin-top: 2rem;
-            width: @image-width;
             margin-left: @phone-margin-left;
+            width: 100%;
+            max-width: 100% !important;
+            min-width: auto !important;
           }
 
           img {

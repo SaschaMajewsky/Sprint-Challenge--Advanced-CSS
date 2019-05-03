@@ -21,7 +21,7 @@ Describe what it means to be mobile first vs desktop first.
 
 A:
 It means that you start to draft the layouts for your designs at first for the mobile (shrinked) version.
-Then later on when the basic functionalities are well established for your mobilve version you expand 
+Then later on when the basic functionalities are well established for your mobile version you expand 
 to bigger screen sizes and layout stuff more nicely for this size. So by nature you use min-width media queries.
 Mobile resolutions are a big part of the modern web and by not focusing the quality of your layout on these
 devices you lose a good chunk of your targetes audience.
