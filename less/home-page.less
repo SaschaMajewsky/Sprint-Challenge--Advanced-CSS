@@ -13,7 +13,7 @@ html {
       section {
         @media @phone {
           width: 428px !important;
-          margin-left: 1rem;
+          margin-left: @phone-margin-left;
           }
       }
       .intro {
@@ -21,14 +21,14 @@ html {
         h2 {
           padding: 15px;
           @media @phone {
-            margin-left: 1rem;
+            margin-left: @phone-margin-left;
               }
         }
 
         p {
           padding: 0 15px;
           @media @phone {
-            margin-left: 1rem;
+            margin-left: @phone-margin-left;
               }
         }
         .header-image img {
@@ -50,7 +50,7 @@ html {
           align-items: center;
           justify-content: center;
           .blast{
-            width: 92%;
+            width: @image-width;
             margin-right: 3rem;
           }
           .sky, .launch {
@@ -88,13 +88,15 @@ html {
           flex-direction: column-reverse;
           align-items: flex-start;
           padding: 0rem;
+          margin-top: 1rem;
         }
 
         .walk-text {
           width: 50%;
           @media @phone {
             margin-top: 1.5rem;
-            width: 100%;
+            width: 92%;
+            margin-left: 1rem;
           }
 
           h3 {
@@ -119,8 +121,8 @@ html {
           margin-left: 4%;
           @media @phone {
             margin-top: 2rem;
-            width: 92%;
-            margin-left: 1rem;
+            width: @image-width;
+            margin-left: @phone-margin-left;
           }
 
           img {

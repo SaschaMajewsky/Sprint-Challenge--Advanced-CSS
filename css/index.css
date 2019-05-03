@@ -303,6 +303,7 @@ html .home .walk {
     flex-direction: column-reverse;
     align-items: flex-start;
     padding: 0rem;
+    margin-top: 1rem;
   }
 }
 html .home .walk .walk-text {
@@ -311,7 +312,8 @@ html .home .walk .walk-text {
 @media (max-width: 500px) {
   html .home .walk .walk-text {
     margin-top: 1.5rem;
-    width: 100%;
+    width: 92%;
+    margin-left: 1rem;
   }
 }
 html .home .walk .walk-text h3 {
