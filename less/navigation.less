@@ -1,1 +1,36 @@
 // Navigation code here
+.container {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        background-color: rgba(211, 111, 53, 0.9);
+        width: 100%;
+        max-width: 800px;
+        border-radius: 5px;
+        .nav-text {
+            .nav-text-styling
+        }
+        .navBar {
+            a {
+                text-decoration: none;
+                color: darken(#23293b, 1%);
+                font-size: 1.5rem;
+                margin: 1.5rem;
+            }
+            .nav-bar-spacing
+        }
+        @media @phone {
+            width: 428px !important;
+            min-width: auto !important;
+            }
+        @media @smaller-phone {
+            width: 100% !important;
+            min-width: auto !important;
+            }
+    }
+}
